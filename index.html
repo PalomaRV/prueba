@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helados Artesanales Yaz</title>
+<link rel="stylesheet" href="estilos.css">
+<style>
+  body {
+    background-color: #dedaeb;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">Helados Artesanales Yaz</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="#">Inicio</a></li>
+<li><a href="#sabores">Sabores</a></li>
+<li><a href="#carrito">Carrito</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+<div class="hamburger" onclick="toggleMenu()">
+       ☰
+</div>
+<div class="carrito-icon" onclick="toggleCarrito()">
+ 🛒 <span id="contadorCarrito">0</span>
+</div>
+
+</nav>
+<h2 id="sabores" align="center">Sabores del Dia</h2>
+<br>
+<div class="productos">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Helado de Café" WIDTH="100" HEIGHT="150">
+<div class="info">
+<h3>Helado de Café</h3>
+<p>$55 MXN</p>
+<button class="btn" onclick="agregar('Helado de Café')">Agregar al Carrito</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563452748364-391c5d5d3202?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Helado de Moras" WIDTH="150" HEIGHT="150">
+<div class="info">
+<h3>Helado de Moras</h3>
+<p>$45 MXN</p>
+<button class="btn" onclick="agregar('Helado de Moras')">Agregar al Carrito</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1642646669923-074199898e3c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Helado de Galleta" WIDTH="100" HEIGHT="150">
+<div class="info">
+<h3>Helado de Galleta</h3>
+<p>$50 MXN</p>
+<button class="btn" onclick="agregar('Helado de Galleta')">Agregar al Carrito</button>
+</div>
+</div>
+</div>
+<br>
+<div id="carrito" class="carrito">
+   <h3>Carrito de Compras</h3>
+   <ul id="listaCarrito"></ul>
+   <p>Total: $<span id="totalCarrito">0</span> MXN</p>
+   <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+</div>
+<br>
+<footer id="contacto" align="center">
+    <p>Tel. 656-742-8901</p>
+    <p>Av. de la Raza 8564.
+    Cd Juárez, Chih.</p>
+   © 2025 Helados Artesanales Yaz – Todos los derechos reservados
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
