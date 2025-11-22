@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nieves Artesanales </title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<!-- MENÚ -->
+<nav class="navbar">
+<div class="logo">🍦 Dulce Frío</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="#">Inicio</a></li>
+<li><a href="#sabores">Sabores</a></li>
+<li><a href="#promos">Promociones</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+<div class="hamburger" onclick="toggleMenu()">
+       ☰
+</div>
+</nav>
+<header>
+<h1>🍦 Dulce Frío – Tienda de Nieves</h1>
+</header>
+<div class="hero">
+   ¡Las mejores nieves artesanales!
+</div>
+<h2 id="sabores">Nuestros Sabores</h2>
+<div class="productos">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497051788611-2c64812349a0" alt="Nieve de Fresa">
+<div class="info">
+<h3>Fresa</h3>
+<p>$35 MXN</p>
+<button class="btn" onclick="agregar('Nieve de Fresa')">Comprar</button>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Nieve de Vainilla">
+<div class="info">
+<h3>Vainilla</h3>
+<p>$30 MXN</p>
+<button class="btn" onclick="agregar('Nieve de Vainilla')">Comprar</button>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84" alt="Nieve de Chocolate">
+<div class="info">
+<h3>Chocolate</h3>
+<p>$38 MXN</p>
+<button class="btn" onclick="agregar('Nieve de Chocolate')">Comprar</button>
+</div>
+</div>
+</div>
+<footer id="contacto">
+   © 2025 Dulce Frío – Todos los derechos reservados
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
